@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Factual</title>
+    <link rel="icon" href="../favicon.ico"/>
+
+    <!-- Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Import mapbox stylesheet -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet'/>
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Add Popoto default CSS styles -->
+    <link rel="stylesheet" href="../node_modules/popoto/dist/popoto.min.css">
+    <link rel="stylesheet" href="../shared.css">
+
+    <style>
+        body {
+            font-family: Roboto, Arial, sans-serif;
+            color: white;
+            background-color: #2e3138;
+        }
+
+        .collapsible-header:focus {
+            outline: 0;
+        }
+
+        .marker {
+            border: none;
+            cursor: pointer;
+            height: 56px;
+            width: 56px;
+            background-image: url(image/node/social/marker.png);
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .result-title {
+            cursor: pointer;
+            color: #039be5;
+        }
+
+        .map {
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Marker tweaks */
+        .mapboxgl-popup-close-button {
+            display: none;
+        }
+
+        .mapboxgl-popup-content {
+            font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+            padding: 0;
+            width: 180px;
+            color: red;
+        }
+
+        .mapboxgl-popup-content-wrapper {
+            padding: 1%;
+        }
+
+        .mapboxgl-popup-content h3 {
+            background: #91c949;
+            color: #fff;
+            margin: 0;
+            display: block;
+            padding: 10px;
+            border-radius: 3px 3px 0 0;
+            font-weight: 700;
+            margin-top: -15px;
+        }
+
+        .mapboxgl-popup-content h4 {
+            margin: 0;
+            display: block;
+            padding: 10px;
+            font-weight: 400;
+        }
+
+        .mapboxgl-popup-content div {
+            padding: 10px;
+        }
+
+        .mapboxgl-container .leaflet-marker-icon {
+            cursor: pointer;
+        }
+
+        .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+            margin-top: 15px;
+        }
+
+        .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+            border-bottom-color: #91c949;
+        }
+
+        .ppt-taxo-ul ul {
+            padding-left: 1em !important;
+        }
+
+        .ppt-taxo-ul {
+            font-size: 14.5px;
+        }
+
+        /* css northwind */
+
+        .ppt-taxo__span-icon.Customer:before {
+            content: "\f007";
+            color: #8bb71a;
+        }
+
+        .ppt-taxo__span-icon.Product:before {
+            content: "\f0c3";
+            color: #8bb71a;
+        }
+
+        .ppt-taxo__span-icon.Order:before {
+            content: "\f07c";
+            color: #8bb71a;
+        }
+
+        .ppt-taxo__span-icon.Supplier:before {
+            content: "\f0ac";
+            color: #8bb71a;
+        }
+
+        .ppt-taxo__span-icon.Category:before {
+            content: "\f02c";
+            color: #8bb71a;
+        }
+
+        .ppt-link__text--value {
+            fill: white;
+        }
+
+        .ppt-segment {
+            opacity: 0.3;
+        }
+
+        /* Adjust stroke styles for different node sizes */
+        .very-thin { stroke-width: 1px; stroke: #fef0d9; }
+        .thin { stroke-width: 13px; stroke: #fdcc8a; }
+        .medium { stroke-width: 25px; stroke: #fc8d59; }
+        .thick { stroke-width: 37px; stroke: #e34a33; }
+        .very-thick { stroke-width: 49px; stroke: #b30000; }
+
+
+    </style>
+</head>
+<body>
+
+<div class="">
+    <!-- ======================================================================================================= -->
+    <!-- GRAPH QUERY-->
+    <!-- ======================================================================================================= -->
+    <div id="p-collapsible-popoto" class="active">
+        <div class="collapsible-header white-text" style="background-color: #525863; border-bottom: 0;">
+            <i class="ppt-icon ppt-icon-logo" style="color:#8bb71a;"></i> Graph Query
+        </div>
+        <div class="collapsible-body no-padding" style="height: 792px; border-bottom: 0;">
+            <div id="popoto-taxonomy" class="ppt-taxo-nav" style="color: white; width: 280px"></div>
+            <div id="popoto-graph" class="ppt-div-graph"></div>
+        </div>
+    </div>
+
+    <!-- ======================================================================================================= -->
+    <!-- QUERY -->
+    <!-- ======================================================================================================= -->
+    <div id="p-collapsible-query" class="active">
+        <div class="collapsible-header white-text" style="background-color: #525863;border-bottom: 0;">
+            <i class="ppt-icon ppt-icon-wrench" style="color:#8bb71a;"></i> Query
+        </div>
+        <div class="collapsible-body no-padding" style="border-bottom: 0;">
+            <div id="popoto-cypher" class="ppt-container-cypher center-align"></div>
+        </div>
+    </div>
+
+    <!-- ======================================================================================================= -->
+    <!-- RESULTS -->
+    <!-- ======================================================================================================= -->
+    <div id="p-collapsible-results" class="active">
+        <div class="collapsible-header white-text" style="background-color: #525863;border-bottom: 0;">
+            <i class="ppt-icon ppt-icon-user-circle-o" style="color:#8bb71a;"></i> Results&nbsp;
+            <span class="" id="result-total-count">0</span>
+        </div>
+        <div class="collapsible-body no-padding" style="border-bottom: 0;">
+            <div class="row">
+                <div id="popoto-results" class="col s3 cards-container"></div>
+                <div id='map' class="map col s9"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <a href="https://www.mapbox.com/help/building-a-store-locator/">https://www.mapbox.com/help/building-a-store-locator/</a>
+</footer>
+
+<!-- Required scripts -->
+<script src="../shared.js" charset="utf-8"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+<script src="../node_modules/d3/dist/d3.min.js" charset="utf-8"></script>
+<script src="../node_modules/neo4j-driver-lite/lib/browser/neo4j-lite-web.min.js" charset="utf-8"></script>
+<script src="../node_modules/popoto/dist/popoto.min.js" charset="utf-8"></script>
+<script src="js/map.js"></script>
+
+<script>
+    var driver = neo4j.driver(
+        "bolt://localhost:7687",
+        neo4j.auth.basic("neo4j", "12345678")
+    );
+
+    popoto.runner.DRIVER = driver;
+
+    popoto.result.RESULTS_PAGE_SIZE = 15;
+    popoto.query.MAX_RESULTS_COUNT = 2000;
+    popoto.graph.USE_FIT_TEXT = true;
+    popoto.graph.WHEEL_ZOOM_ENABLED = false;
+
+// Set scale for size and stroke based on 'gaji' attribute
+var sizeScale = d3.scaleQuantize()
+    .domain([2000000, 13000000])  // Gaji min and max range
+    .range([50, 75, 100, 125, 150]);  // Node size based on gaji
+
+var strokeCSSScale = d3.scaleThreshold()  // Use scaleThreshold to have custom breakpoints
+    .domain([5000000, 7000000, 8000000, 10000000, 13000000])  // Gaji breakpoints
+    .range(["very-thin", "thin", "medium", "thick", "very-thick"]);  // Stroke based on gaji
+
+popoto.provider.node.Provider = {
+    "Klien": {
+        returnAttributes: ["nama_client", "id_client", "perusahaan_client", "email"],
+        constraintAttribute: "id_client",
+        autoExpandRelations: true,
+        "getDisplayType": function (node) {
+            return popoto.provider.node.DisplayTypes.IMAGE;
+        },
+        "displayResults": function(resultElement) {
+            resultElement
+                .on("click", function(r) { flyToResult(r) });
+            resultElement
+                .append("span")
+                .attr("class", "result-title")
+                .text(function(d) { return d.attributes.nama_client; });
+            resultElement
+                .append("div")
+                .text(function(d) { return d.attributes.perusahaan_client + " · " + d.attributes.email; });
+        }
+    },
+    "Departement": {
+        returnAttributes: [ "lokasi", "id_departement", "nama_departement"],
+        constraintAttribute: "id_departement",
+        autoExpandRelations: true,
+        "getDisplayType": function (node) {
+            return popoto.provider.node.DisplayTypes.IMAGE;
+        },
+    },
+    "Karyawan": {
+        returnAttributes: ["nama_karyawan", "id_karyawan", "jabatan", "gaji"],
+        constraintAttribute: "id_karyawan",
+        autoExpandRelations: true,
+        "getDisplayType": function (node) {
+            return popoto.provider.node.DisplayTypes.IMAGE;
+        },
+        "getSize": function (node) {
+            if (node.attributes && node.attributes.gaji) {
+                return sizeScale(node.attributes.gaji);  // Size based on gaji
+            }
+            return 50;  // Default size if no gaji
+        },
+        "displayResults": function(resultElement) {
+            resultElement.append("span")
+                .attr("class", "result-title")
+                .text(function(d) { return d.attributes.nama_karyawan; });
+            resultElement.append("div")
+                .text(function(d) { return d.attributes.jabatan; });
+            resultElement.append("div")
+                .text(function(d) { return "Gaji: " + d.attributes.gaji; });
+        }
+},
+    "Project": {
+        returnAttributes: ["nama_project", "id_project", "id_client", "StartDate", "EndDate"],
+        constraintAttribute: "id_project",
+        autoExpandRelations: true,
+        "getDisplayType": function (node) {
+            return popoto.provider.node.DisplayTypes.IMAGE;
+        },
+    },
+    "Tugas": {
+        returnAttributes: ["nama_tugas", "id_tugas", "id_project", "id_karyawan", "status"],
+        constraintAttribute: "id_tugas",
+        autoExpandRelations: true,
+        "getDisplayType": function (node) {
+            return popoto.provider.node.DisplayTypes.IMAGE;
+        },
+    }
+};
+
+
+    popoto.provider.link.Provider = {
+        "BERTUGAS_DI": {
+            "getTextValue": function(link) {
+                return link.label + " task " + popoto.provider.node.getTextValue(link.target);
+            }
+        },
+
+        "HANDLE": {
+            "getTextValue": function(link) {
+                return link.label + " task " + popoto.provider.node.getTextValue(link.target);
+            }
+        },
+        "BAGIAN_DARI": {
+            "getTextValue": function(link) {
+                return "Part of " + popoto.provider.node.getTextValue(link.target);
+            }
+        },
+        "MENGAWASI": {
+            "getTextValue": function(link) {
+                return "DI AWASI " + popoto.provider.node.getTextValue(link.target);
+            }
+        },
+        "MEMILIKI": {
+            "getTextValue": function(link) {
+                return "Owned by " + popoto.provider.node.getTextValue(link.target);
+            }
+        }
+    };
+
+        // Popoto taxonomies provider configuration
+        popoto.provider.taxonomy.Provider = {
+        "getCSSClass": function (label, element) {
+            var labelAsCSSName = label.replace(/[^0-9a-z\-_]/gi, '');
+
+            var cssClass = "ppt-taxo__" + element;
+
+            return cssClass + " " + labelAsCSSName;
+        }
+    };
+
+    popoto.result.onTotalResultCount(function(count) {
+        document.getElementById("result-total-count").innerHTML = "(" + count + ")";
+    });
+
+// Coordinates for the locations (departments)
+var lokasiCoordinates = {
+
+};
+
+mapboxgl.accessToken = 'pk.eyJ1IjoicG90YXRvdGFydSIsImEiOiJjamU3NXM1bTUwOGRqMnBvNWkzdjByNWV0In0.2NMoyG2zRd8X8BMQht_gAg'; // Replace with your actual Mapbox token
+
+// Initialize the Map
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v10',
+    center: [114.5923, -3.3477],
+    zoom: 10
+});
+
+map.addControl(new mapboxgl.NavigationControl());
+
+driver.verifyConnectivity().then(function () {
+    popoto.start("Departement");
+}).catch(function (error) {
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("error-content").innerText = error;
+    console.error(error);
+});
+
+fetch('locations2.json')
+    .then(response => response.json())
+    .then(lokasiCoordinates => {
+        // Listen for node click event to zoom to department location
+popoto.result.onResultReceived(function(resultObjects) {
+    resultObjects.forEach(function(result) {
+        var departmentLocation2 = result.attributes.lokasi;
+
+        // Check if the department name exists in the coordinates object
+        var departmentLocation = lokasiCoordinates[departmentLocation2];
+
+        if (departmentLocation) {
+            map.flyTo({
+                center: departmentLocation,
+                zoom: 12
+            },
+            console.log("ini koordinat: " + departmentLocation)
+            );
+        } else {
+            console.log("cek lokasi: " + departmentLocation2);
+        }
+    });
+});
+
+// Adding markers for each location
+for (var lokasi1 in lokasiCoordinates) {
+    var lokasi2 = lokasi1;  // Using lokasi1 from the coordinates object
+    var departmentLocation2 = lokasiCoordinates[lokasi2]; // Get coordinates for the location
+
+    // Create a marker for each location
+    var marker = new mapboxgl.Marker()
+        .setLngLat(departmentLocation2) // Set the correct coordinates for the marker
+        .addTo(map);
+
+    // Add a popup with the department name (departmentLocation2)
+    var popup = new mapboxgl.Popup({ offset: 25 })
+        .setText("Location: " + lokasi2); // Set the popup content to the department name
+
+    marker.setPopup(popup); // Attach the popup to the marker
+
+    // Adding a custom attribute to each marker (department name) for click handling
+    marker.getElement().dataset.lokasi2 = lokasi2;
+
+    // Fly to the location when the marker is clicked
+    marker.getElement().addEventListener('click', function () {
+        var lokasi2 = this.dataset.lokasi2; // Get the location name from the marker's data attribute
+        var cityCoordinates = lokasiCoordinates[lokasi2]; // Get the coordinates of the clicked location
+
+        if (cityCoordinates) {
+            map.flyTo({
+                center: cityCoordinates, // Fly to the clicked location
+                zoom: 12
+            });
+        }
+    });
+}
+
+
+fetch('id_locations.json')
+    .then(response => response.json())
+    .then(idLocations => {
+        fetch('locations2.json')
+            .then(response => response.json())
+            .then(locations => {
+                // Mendengarkan hasil pencarian Karyawan
+                popoto.result.onResultReceived(function(resultObjects) {
+                    resultObjects.forEach(function(result) {
+                        var karyawanId = result.attributes.id_karyawan; // ID Karyawan
+
+                        // Dapatkan ID departemen dari id_locations.json berdasarkan ID Karyawan
+                        var departmentId = idLocations[karyawanId]; // Misalnya, idLocations["Karyawan1"] = "D001"
+
+                        if (departmentId) {
+                            // Dapatkan koordinat lokasi berdasarkan id_departement dari locations.json
+                            var departmentLocation = locations[departmentId];
+
+                            if (departmentLocation) {
+                                map.flyTo({
+                                    center: departmentLocation,
+                                    zoom: 12
+                                });
+                                console.log("Lokasi departemen " + departmentId + ": " + departmentLocation);
+                            } else {
+                                console.log("Lokasi tidak ditemukan untuk departemen ID: " + departmentId);
+                            }
+                        } else {
+                            console.log("ID departemen tidak ditemukan untuk Karyawan: " + karyawanId);
+                        }
+                    });
+                });
+
+            });
+    });
+
+    })
+
+
+
+</script>
+
+
+</body>
+</html>

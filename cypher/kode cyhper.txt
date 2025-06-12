@@ -1,0 +1,71 @@
+HAPUS SEMUA NODE 
+MATCH (n) DETACH DELETE n
+
+MATCH ()-[r:RELATIONSHIP_TYPE]->() DELETE r;
+
+
+====membuat dan import node dari csv====
+LOAD CSV WITH HEADERS FROM "http://localhost/[*Nama Folder]*/data_client.csv" AS row
+CREATE (n:Klien)
+SET n = row
+
+LOAD CSV WITH HEADERS FROM "http://localhost/[*Nama Folder]*/data_departement.csv" AS row
+CREATE (n:Departement)
+SET n = row
+
+LOAD CSV WITH HEADERS FROM "http://localhost/[*Nama Folder]*/data_karyawan.csv" AS row
+CREATE (n:Karyawan)
+SET n = row
+
+LOAD CSV WITH HEADERS FROM "http://localhost/[*Nama Folder]*/data_project.csv" AS row
+CREATE (n:Project)
+SET n = row
+
+LOAD CSV WITH HEADERS FROM "http://localhost/[*Nama Folder]*/data_tugas.csv" AS row
+CREATE (n:Tugas)
+SET n = row
+
+===index===
+CREATE INDEX FOR (k:Karyawan) ON (k.id_karyawan)
+CREATE INDEX FOR (k:Karyawan) ON (k.nama_karyawan)
+
+CREATE INDEX FOR (c:Klien) ON (c.id_client)
+CREATE INDEX FOR (c:Klien) ON (c.nama_client)
+
+CREATE INDEX FOR (d:Departement) ON (d.id_departement)
+CREATE INDEX FOR (d:Departement) ON (d.nama_departement)
+
+CREATE INDEX FOR (p:Project) ON (p.id_project)
+CREATE INDEX FOR (p:Project) ON (p.nama_project)
+
+CREATE INDEX FOR (t:Tugas) ON (t.id_tugas)
+CREATE INDEX FOR (t:Tugas) ON (t.nama_tugas)
+
+=========================================================
+
+// Relasi antara Karyawan dan Departement
+MATCH (k:Karyawan),(d:Departement)
+WHERE k.id_departement = d.id_departement
+MERGE (k)-[:BERTUGAS_DI]->(d)
+
+// Relasi antara Karyawan dan Tugas
+MATCH (t:Tugas),(k:Karyawan)
+WHERE t.id_karyawan = k.id_karyawan
+CREATE (k)-[:HANDLE]->(t)
+
+// Relasi antara Tugas dan Project
+MATCH (t:Tugas),(p:Project)
+WHERE t.id_project = p.id_project
+MERGE (t)-[:BAGIAN_DARI]->(p)
+
+// Relasi antara Klien dan Project
+MATCH (c:Klien),(p:Project)
+WHERE c.id_client = p.id_client
+MERGE (c)-[:MEMILIKI]->(p)
+
+// Relasi antara Departement dan Project (dengan supervisi)
+MATCH (k:Karyawan)-[:BERTUGAS_DI]->(d:Departement), 
+      (k)-[:HANDLE]->(t:Tugas), 
+      (t)-[:BAGIAN_DARI]->(p:Project)
+MERGE (d)-[:MENGAWASI]->(p)
+

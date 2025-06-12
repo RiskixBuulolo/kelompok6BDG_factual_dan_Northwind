@@ -1,0 +1,121 @@
+id_project,nama_project,id_client,StartDate,EndDate
+p001,Website Redesign,c001,1/1/2023,3/1/2023
+p002,App Development,c002,2/15/2023,5/15/2023
+p003,Marketing Campaign,c003,3/1/2023,6/1/2023
+p004,Cloud Migration,c004,1/15/2023,4/15/2023
+p005,Data Analysis,c005,2/1/2023,5/1/2023
+p006,AI Model Development,c006,3/10/2023,7/10/2023
+p007,VR Experience,c007,1/20/2023,4/20/2023
+p008,Website Maintenance,c008,2/25/2023,5/25/2023
+p009,Software Upgrade,c009,1/30/2023,4/30/2023
+p010,Mobile App Launch,c010,3/1/2023,6/1/2023
+p011,SEO Strategy,c011,1/15/2023,5/15/2023
+p012,Product Launch,c012,2/5/2023,6/5/2023
+p013,E-commerce Solution,c013,3/1/2023,7/1/2023
+p014,Social Media Campaign,c014,1/10/2023,3/10/2023
+p015,Data Visualization,c015,2/20/2023,5/20/2023
+p016,IT Infrastructure,c016,1/25/2023,4/25/2023
+p017,Web Analytics,c017,2/15/2023,5/15/2023
+p018,Customer Feedback System,c018,3/5/2023,6/5/2023
+p019,Supply Chain Optimization,c019,1/1/2023,3/1/2023
+p020,Remote Work Setup,c020,2/10/2023,4/10/2023
+p021,optimize back-end content,c003,4/14/2025,3/18/2025
+p022,maximize open-source paradigms,c004,4/18/2025,2/23/2025
+p023,unleash frictionless e-tailers,c004,1/17/2025,5/5/2025
+p024,harness clicks-and-mortar e-commerce,c003,3/16/2025,3/7/2025
+p025,syndicate open-source technologies,c004,3/14/2025,1/24/2025
+p026,implement sticky schemas,c001,2/8/2025,1/18/2025
+p027,revolutionize killer communities,c003,3/1/2025,2/26/2025
+p028,repurpose plug-and-play eyeballs,c005,3/11/2025,1/15/2025
+p029,evolve world-class paradigms,c003,2/13/2025,3/25/2025
+p030,streamline best-of-breed schemas,c003,2/10/2025,1/17/2025
+p031,transform frictionless architectures,c003,1/28/2025,1/23/2025
+p032,empower holistic interfaces,c005,1/6/2025,3/25/2025
+p033,aggregate seamless eyeballs,c001,1/24/2025,1/20/2025
+p034,syndicate scalable deliverables,c001,4/1/2025,3/9/2025
+p035,aggregate B2B portals,c001,1/22/2025,1/7/2025
+p036,exploit clicks-and-mortar networks,c004,5/13/2025,3/14/2025
+p037,visualize bleeding-edge methodologies,c003,5/30/2025,3/22/2025
+p038,grow clicks-and-mortar applications,c003,5/28/2025,4/6/2025
+p039,e-enable collaborative metrics,c003,1/7/2025,3/17/2025
+p040,benchmark mission-critical experiences,c001,1/12/2025,1/23/2025
+p041,cultivate enterprise e-markets,c003,3/30/2025,5/22/2025
+p042,transition dynamic e-markets,c001,3/1/2025,3/27/2025
+p043,envisioneer front-end methodologies,c003,5/20/2025,2/5/2025
+p044,seize holistic synergies,c005,5/30/2025,5/16/2025
+p045,synthesize distributed eyeballs,c003,1/6/2025,1/12/2025
+p046,extend 24/365 metrics,c002,1/30/2025,5/23/2025
+p047,integrate vertical action-items,c003,4/10/2025,6/3/2025
+p048,evolve viral eyeballs,c002,2/26/2025,4/20/2025
+p049,morph enterprise models,c004,1/19/2025,5/16/2025
+p050,strategize seamless architectures,c002,6/2/2025,2/8/2025
+p051,envisioneer world-class e-business,c001,4/29/2025,1/21/2025
+p052,whiteboard robust synergies,c001,4/7/2025,2/7/2025
+p053,enhance B2B e-business,c001,4/18/2025,4/11/2025
+p054,brand efficient e-business,c003,3/19/2025,1/2/2025
+p055,productize virtual action-items,c005,4/19/2025,4/30/2025
+p056,aggregate bricks-and-clicks schemas,c003,1/6/2025,4/11/2025
+p057,whiteboard 24/7 eyeballs,c002,3/15/2025,2/17/2025
+p058,repurpose next-generation architectures,c004,3/1/2025,1/28/2025
+p059,incubate bricks-and-clicks users,c001,4/2/2025,4/27/2025
+p060,utilize sticky e-tailers,c003,5/29/2025,5/31/2025
+p061,envisioneer frictionless users,c001,4/12/2025,3/22/2025
+p062,incubate rich functionalities,c003,1/27/2025,4/20/2025
+p063,synthesize frictionless markets,c002,1/6/2025,4/2/2025
+p064,re-intermediate revolutionary synergies,c003,6/1/2025,5/24/2025
+p065,orchestrate frictionless synergies,c004,2/7/2025,4/18/2025
+p066,transition bleeding-edge convergence,c005,1/17/2025,3/4/2025
+p067,facilitate dot-com action-items,c003,5/14/2025,4/30/2025
+p068,reinvent integrated infrastructures,c001,3/27/2025,6/2/2025
+p069,enhance end-to-end ROI,c003,1/12/2025,3/21/2025
+p070,synergize visionary communities,c004,5/11/2025,1/17/2025
+p071,streamline enterprise partnerships,c003,2/3/2025,1/30/2025
+p072,incentivize plug-and-play e-tailers,c005,3/24/2025,1/6/2025
+p073,target intuitive initiatives,c003,2/10/2025,1/16/2025
+p074,architect B2B web-readiness,c005,2/13/2025,2/8/2025
+p075,redefine turn-key partnerships,c005,2/4/2025,1/31/2025
+p076,integrate distributed experiences,c001,4/13/2025,3/14/2025
+p077,engineer compelling markets,c001,4/28/2025,3/20/2025
+p078,disintermediate scalable relationships,c003,5/20/2025,2/6/2025
+p079,envisioneer out-of-the-box ROI,c004,2/8/2025,2/14/2025
+p080,architect leading-edge info-mediaries,c001,1/18/2025,1/25/2025
+p081,syndicate B2B vortals,c005,4/14/2025,1/18/2025
+p082,deploy back-end paradigms,c001,2/6/2025,2/5/2025
+p083,architect back-end mindshare,c003,2/26/2025,3/18/2025
+p084,maximize 24/365 methodologies,c005,2/24/2025,4/26/2025
+p085,enable cutting-edge technologies,c001,4/15/2025,5/30/2025
+p086,mesh mission-critical initiatives,c005,5/16/2025,2/3/2025
+p087,architect efficient networks,c005,2/27/2025,1/28/2025
+p088,transform value-added mindshare,c002,2/22/2025,1/1/2025
+p089,deploy magnetic networks,c003,3/25/2025,3/24/2025
+p090,facilitate global initiatives,c005,1/17/2025,2/25/2025
+p091,productize robust ROI,c001,3/30/2025,2/20/2025
+p092,re-contextualize viral initiatives,c001,4/24/2025,1/7/2025
+p093,morph integrated communities,c003,2/16/2025,3/17/2025
+p094,utilize end-to-end channels,c004,5/1/2025,3/2/2025
+p095,strategize holistic technologies,c001,3/20/2025,2/11/2025
+p096,leverage dynamic schemas,c003,2/26/2025,5/31/2025
+p097,target cross-platform mindshare,c001,1/10/2025,1/16/2025
+p098,syndicate viral deliverables,c002,1/17/2025,3/15/2025
+p099,revolutionize mission-critical info-mediaries,c004,2/20/2025,5/27/2025
+p100,repurpose seamless users,c004,5/11/2025,3/21/2025
+p101,cultivate integrated e-markets,c002,2/8/2025,5/4/2025
+p102,deliver holistic applications,c001,5/3/2025,1/5/2025
+p103,deliver leading-edge e-markets,c001,4/25/2025,4/9/2025
+p104,reinvent synergistic relationships,c004,1/20/2025,1/4/2025
+p105,embrace open-source eyeballs,c005,2/25/2025,2/20/2025
+p106,mesh user-centric infrastructures,c002,1/27/2025,4/9/2025
+p107,disintermediate back-end portals,c003,2/15/2025,3/29/2025
+p108,embrace viral paradigms,c004,3/10/2025,5/25/2025
+p109,aggregate proactive e-markets,c004,3/15/2025,2/25/2025
+p110,morph magnetic supply-chains,c002,3/31/2025,4/18/2025
+p111,disintermediate plug-and-play networks,c001,1/6/2025,3/7/2025
+p112,monetize bleeding-edge infrastructures,c003,1/9/2025,3/22/2025
+p113,extend robust markets,c004,1/31/2025,3/2/2025
+p114,visualize innovative methodologies,c003,4/26/2025,1/28/2025
+p115,generate e-business eyeballs,c002,5/6/2025,4/28/2025
+p116,deliver B2B niches,c001,5/17/2025,4/28/2025
+p117,benchmark extensible technologies,c004,2/6/2025,5/6/2025
+p118,empower bleeding-edge initiatives,c002,1/6/2025,4/21/2025
+p119,brand synergistic portals,c002,6/3/2025,1/17/2025
+p120,unleash bricks-and-clicks e-tailers,c003,3/31/2025,4/28/2025

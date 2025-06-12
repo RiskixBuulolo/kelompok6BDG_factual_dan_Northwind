@@ -1,0 +1,121 @@
+id_client,perusahaan_client,nama_client,email
+c001,Tech Innovations,Jane A,jane@techinnovations.com
+c002,Global Enterprises,Mark G,mark@globalenterprises.com
+c003,Creative Solutions,Emily T,emily@creativesolutions.com
+c004,Future Tech,Robert F,robert@futuretech.com
+c005,Smart Solutions,Linda,linda@gmail.com
+c006,Innovative Ideas,Ana Santoso,ana santoso@gmail.com
+c007,Next Gen,Dwi Gunawan,dwi gunawan@gmail.com
+c008,Tech Giant,Anton Anada,anton anada@gmail.com
+c009,Digital World,Sustrono,sustrono@gmail.com
+c010,Smart Home,Agus Nova,agus nova@gmail.com
+c011,Auto Innovations,Sopia S,sopia s@gmail.com
+c012,Health Tech,Bagus Kuncoro,bagus kuncoro@gmail.com
+c013,Green Solutions,David Jr,david jr@gmail.com
+c014,Data Insights,Susan D,susan d@gmail.com
+c015,Virtual Reality,Michael N,michael n@gmail.com
+c016,Cloud Services,Laura V,laura v@gmail.com
+c017,Tech Connect,Sarah S,sarah s@gmail.com
+c018,AI Lab,Daniel J,daniel j@gmail.com
+c019,Smart Logistics,Tina L,tina l@gmail.com
+c020,Blockchain Inc.,James J,james j@gmail.com
+c021,Newton-Case,Michael Hall,xgonzalez@huff.net
+c022,Wang-Paul,Joe Curry,christopher31@gmail.com
+c023,"Morris, Sanford and Huber",Kyle Fuller,graykevin@hotmail.com
+c024,"Cox, Gomez and Cruz",Angela Cook,brandygregory@trujillo.com
+c025,"Chang, Holmes and Stone",David Moore,wesley24@yahoo.com
+c026,Williamson-Rogers,Janet Oconnell,okirk@yahoo.com
+c027,Nichols-Williams,Scott Bradley,rwarren@kramer.org
+c028,Ramos-Morton,Abigail Chandler,kristenwatts@lee.net
+c029,"Zamora, Rodriguez and Taylor",David Cantu,andersonmary@yahoo.com
+c030,"Gilbert, Donaldson and James",Megan Rodriguez,idelgado@yahoo.com
+c031,Conley PLC,John Long,garciajose@hernandez-garcia.org
+c032,Williams Group,Christopher Thomas,rachelrobbins@yahoo.com
+c033,"Miller, Simpson and Torres",David Cook MD,cynthia00@gmail.com
+c034,"Johnson, Robinson and Wilson",Jacob Gross,judymitchell@hobbs.biz
+c035,Sherman-Garcia,Tamara Mercado,heatherevans@gmail.com
+c036,Dominguez Group,Carlos Lowe,john72@gmail.com
+c037,"Wright, White and Bryant",Randy Keith,samantha74@torres.com
+c038,"Lopez, Fox and Jordan",Joseph Kelly,gibsongina@walker-miller.com
+c039,Phillips LLC,Amber Cooper,franklinjennifer@garcia.com
+c040,"Jones, Reed and Kennedy",Lynn Ramirez,brownjessica@hotmail.com
+c041,Rodriguez Inc,Rachael Chaney,wmurillo@huang-brock.com
+c042,Brown Group,Autumn Mckenzie,dturner@pratt-archer.com
+c043,Cisneros-Adams,Zachary Finley,lisakennedy@gmail.com
+c044,Bird-Marshall,Terry Raymond,wattsjames@hotmail.com
+c045,Gibson Ltd,Anne Allen,glee@hotmail.com
+c046,"Knapp, Carroll and Reeves",James Todd,tdavis@hotmail.com
+c047,Lopez and Sons,Ryan Kline,brian83@bennett.com
+c048,Hill-Gill,Thomas Smith,roberttate@gmail.com
+c049,Shannon-Preston,Gloria Hughes,smithray@mueller-curtis.com
+c050,Wells PLC,Stephanie Austin,catherinegrant@nelson-may.net
+c051,Carr-Farley,Allison Lewis,emilymullins@dean.biz
+c052,Walker PLC,Samantha Medina,carrolllisa@jones-johnson.com
+c053,"Fernandez, Hayes and Torres",Cheyenne Hale,sheilarodgers@parsons-perkins.org
+c054,Brown PLC,Phillip Simon,joshua69@hotmail.com
+c055,Pace Ltd,Lindsey Long,hamptonerik@hotmail.com
+c056,"Jones, Richards and Duncan",Daniel Washington,oponce@ford.net
+c057,Edwards-Hill,Hayden Perez,pweeks@clarke-ford.biz
+c058,Fisher-Walton,Daniel Miller,bellsarah@yahoo.com
+c059,Henderson-Alexander,Mary Cox,grantfisher@johnson-crane.biz
+c060,"Johnson, Patrick and Harris",Beth Fox,crawfordmaria@hopkins.com
+c061,"Mays, Burke and Willis",Jennifer Bright,eanderson@giles-howard.net
+c062,Moses-Lopez,Kylie Oneal,christopherhall@gmail.com
+c063,Wright-Pearson,Penny West,nstewart@crawford.com
+c064,Arnold Group,Lisa Andrews MD,brittany43@brown-case.com
+c065,"Acosta, Pierce and Paul",James Walter,robertsrobin@gmail.com
+c066,Hendrix-Gibson,Jenny Nelson,andersenduane@yahoo.com
+c067,Carroll-Williams,Amanda Wiley,rrobles@gmail.com
+c068,Shelton-Edwards,Robert Roy,davidsanchez@tate.com
+c069,Gonzalez-Foster,Cynthia Pratt,joshua65@yahoo.com
+c070,"Blevins, Dominguez and Wilson",Denise Haynes,deborahshaffer@hotmail.com
+c071,"Nguyen, Crosby and Eaton",Michael Colon,bryanwhite@owens-robinson.com
+c072,James PLC,Andrew Gaines,dprice@merritt.net
+c073,Livingston-Mccoy,James Gilbert,sloanbrandon@hansen.org
+c074,Davis Group,Scott Evans,iwolfe@marks-nicholson.net
+c075,"Bender, White and Carroll",Jeff Garcia,amy76@yahoo.com
+c076,Wilson-Brooks,William Sanders,williamsgregory@yahoo.com
+c077,Campbell PLC,Justin Hester,shannonserrano@moore.com
+c078,"Bernard, Murphy and Stout",Michael Middleton,salazarwilliam@gmail.com
+c079,Griffin and Sons,Heather Humphrey,zpittman@mckinney-davis.com
+c080,"Bishop, Hart and Martinez",Robert Malone,fdiaz@martin.com
+c081,Keith Ltd,Terry Morales,robert39@schultz.com
+c082,"Tran, Davis and Wilkins",Phillip Taylor,christy45@gmail.com
+c083,"Olsen, Goodman and Gonzalez",John James,kvega@garcia.com
+c084,Wise and Sons,John Myers,desireekennedy@yahoo.com
+c085,Smith-Duncan,Mark Vincent,smithjennifer@gmail.com
+c086,Oneill Group,Paul Ewing,tyler71@medina-smith.org
+c087,Williams-Terry,Jose Osborne,larryjones@walker-perkins.com
+c088,Wilson-Wilkinson,Adam Smith,russellholloway@bryant.com
+c089,"Cook, Lynn and Murphy",Samuel Charles,richard84@yahoo.com
+c090,Bradshaw-Davis,Mrs. Destiny James,brittany18@king-grant.info
+c091,Brown-Cooper,Kristen Spence,melanie38@hotmail.com
+c092,Rodriguez Inc,Richard Mcdonald,udiaz@hotmail.com
+c093,"Trujillo, Rose and Thomas",Susan Mcclain,ncuevas@hotmail.com
+c094,Mitchell-Jackson,Patrick Moore,xnguyen@diaz.com
+c095,Williams-Payne,David Shepherd,chambersrachel@stewart.biz
+c096,Romero Group,Gary Martinez,wellsjennifer@hotmail.com
+c097,Thompson LLC,David Smith,stevenhenderson@yahoo.com
+c098,"Williams, Stephens and Sanchez",Virginia Lang,sosakathleen@yahoo.com
+c099,Robinson-Williams,Nicholas Adams,franklin04@spencer-contreras.net
+c100,"Adams, Thompson and Shepard",Mark Morales,frazierjames@glass-king.com
+c101,Dillon-Lawson,Linda Holmes DVM,kimberly15@yahoo.com
+c102,Underwood Group,Steven Pace,wintersglenda@johnson.com
+c103,Contreras-Garcia,Brenda Coleman,skerr@gmail.com
+c104,Price and Sons,Anthony Martin,lisa33@patterson-parker.com
+c105,Schneider and Sons,Joseph Williams,tiffany38@sanchez-hunter.com
+c106,Warren-Harvey,Seth Patterson,jamessmith@yahoo.com
+c107,Wolf Ltd,Jessica Kelly,gerald35@yahoo.com
+c108,Gonzalez and Sons,Benjamin Howard,alexandernicholson@dennis.biz
+c109,Wilson-Marshall,Morgan Washington,clang@gmail.com
+c110,"Hayes, Jones and Dudley",Susan Wilson,angelakirk@joseph.com
+c111,Joseph-Lopez,Eric Thompson,kristenmoore@gmail.com
+c112,"Lane, Snyder and Harris",Maria Drake,ricky47@jones.com
+c113,"Barnes, Edwards and Johnson",Ricky Sims,pmitchell@johnson-jones.com
+c114,"Jones, Carter and Martin",Edward Mccormick,charles99@curtis.org
+c115,Thompson PLC,Miss Nicole Burke DDS,clarence58@mack.com
+c116,Norton-Wiley,Hannah Wright,marymartin@sanchez.com
+c117,Thompson-Johnson,Trevor Archer,michael88@gmail.com
+c118,"Williams, Lopez and Lopez",Leah Hunt,tonya63@gmail.com
+c119,Smith Inc,Susan Arnold,jennifercarter@harrell.biz
+c120,"Salinas, Gay and Taylor",George Burke,yrobles@wise-evans.com

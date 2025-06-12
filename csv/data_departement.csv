@@ -1,0 +1,106 @@
+id_departement,nama_departement,lokasi,latitude,longitude
+d001,Informatic Technology,Jakarta,-6.2088,106.8456
+d002,Development,Bekasi,-6.2344,106.9895
+d003,Design,Pekanbaru,-0.5186,101.4482
+d004,Marketing,Kalimantan Selatan,-3.318,114.59
+d005,Sales,Sulawesi Utara,1.3692,124.845
+d006,Development,Sulawesi Utara,1.3692,124.845
+d007,Sales,Bandung,-6.9175,107.6191
+d008,Development,Cilacap,-7.7324,109.0092
+d009,Sales,Bandung,-6.9175,107.6191
+d010,Marketing,Central Java,-7.15,110.5
+d011,Design,Bandung,-6.9175,107.6191
+d012,Informatic Technology,Bandung,-6.9175,107.6191
+d013,Informatic Technology,Pontianak,-0.0218,109.333
+d014,Design,Bandung,-6.9175,107.6191
+d015,Design,Surabaya,-7.2575,112.7521
+d016,Informatic Technology,Makassar,-5.1477,119.4328
+d017,Design,Cirebon,-6.7,108.55
+d018,Sales,Kupang,-10.1625,123.5958
+d019,Informatic Technology,Bandung,-6.9175,107.6191
+d020,Informatic Technology,Bandung,-6.9175,107.6191
+d021,Informatic Technology,Papua,-4.2465,140.5964
+d022,Development,Bandung,-6.9175,107.6191
+d023,Informatic Technology,Tangerang,-6.1792,106.6322
+d024,Development,Jakarta,-6.2088,106.8456
+d025,Development,Bandung,-6.9175,107.6191
+d026,Sales,Central Sulawesi,-0.8314,119.8747
+d027,Sales,Bandung,-6.9175,107.6191
+d028,Sales,North Kalimantan,3.006,116.71
+d029,Marketing,West Kalimantan,0.0444,109.3421
+d030,Informatic Technology,Bandung,-6.9175,107.6191
+d031,Informatic Technology,Bandung,-6.9175,107.6191
+d032,Design,Medan,3.5952,98.6722
+d033,Development,Bandung,-6.9175,107.6191
+d034,Design,Bandung,-6.9175,107.6191
+d035,Sales,Bandung,-6.9175,107.6191
+d036,Development,Bandung,-6.9175,107.6191
+d037,Sales,Palembang,-2.976,104.7742
+d038,Design,Palu,-0.9037,119.87
+d039,Marketing,Tangerang,-6.1792,106.6322
+d040,Design,Sumbawa,-8.375,117.43
+d041,Informatic Technology,West Java,-6.7473,107.115
+d042,Marketing,Bandung,-6.9175,107.6191
+d043,Sales,Aceh,4.6959,96.749
+d044,Development,West Nusa Tenggara,-8.5456,116.5183
+d045,Development,Bandung,-6.9175,107.6191
+d046,Design,Palembang,-2.976,104.7742
+d047,Design,Blitar,-8.11,112.225
+d048,Sales,Kupang,-10.1625,123.5958
+d049,Sales,Bandung,-6.9175,107.6191
+d050,Design,West Nusa Tenggara,-8.5456,116.5183
+d051,Development,Palembang,-2.976,104.7742
+d052,Marketing,Malang,-7.9666,112.6326
+d053,Informatic Technology,Pontianak,-0.0218,109.333
+d054,Sales,Sulawesi Utara,1.3692,124.845
+d055,Design,Bandung,-6.9175,107.6191
+d056,Design,Bandung,-6.9175,107.6191
+d057,Informatic Technology,Southeast Sulawesi,-4,122.5
+d058,Development,Banjarmasin,-3.319,114.5904
+d059,Sales,Yogyakarta,-7.7956,110.3695
+d060,Sales,East Nusa Tenggara,-10.2167,123.6079
+d061,Sales,Bandung,-6.9175,107.6191
+d062,Development,Southeast Sulawesi,-4,122.5
+d063,Development,Maluku,-3.7121,128.2223
+d064,Sales,Bandung,-6.9175,107.6191
+d065,Sales,Bandung,-6.9175,107.6191
+d066,Sales,Bandung,-6.9175,107.6191
+d067,Marketing,Manado,1.4743,124.8452
+d068,Marketing,Pekanbaru,-0.5186,101.4482
+d069,Development,Bandung,-6.9175,107.6191
+d070,Design,Sumbawa,-8.375,117.43
+d071,Informatic Technology,Bandung,-6.9175,107.6191
+d072,Informatic Technology,Sumbawa,-8.375,117.43
+d073,Design,West Nusa Tenggara,-8.5456,116.5183
+d074,Sales,Bandung,-6.9175,107.6191
+d075,Development,Mataram,-8.5833,116.1167
+d076,Sales,Tangerang,-6.1792,106.6322
+d077,Sales,Malang,-7.9666,112.6326
+d078,Design,Bandung,-6.9175,107.6191
+d079,Informatic Technology,Bandung,-6.9175,107.6191
+d080,Development,Lampung,-5.41,105.265
+d081,Development,Bandung,-6.9175,107.6191
+d082,Development,Bandung,-6.9175,107.6191
+d083,Informatic Technology,North Kalimantan,3.006,116.71
+d084,Informatic Technology,Bandung,-6.9175,107.6191
+d085,Marketing,Bandung,-6.9175,107.6191
+d086,Design,Bandung,-6.9175,107.6191
+d087,Design,Bekasi,-6.2344,106.9895
+d088,Development,Bandung,-6.9175,107.6191
+d089,Informatic Technology,South Kalimantan,-3.32,114.59
+d090,Marketing,Bandung,-6.9175,107.6191
+d091,Sales,Ambon,-3.695,128.1882
+d092,Marketing,Bandung,-6.9175,107.6191
+d093,Informatic Technology,Samarinda,-0.5023,117.1451
+d094,Marketing,Sumbawa,-8.375,117.43
+d095,Marketing,Bandung,-6.9175,107.6191
+d096,Development,Bandung,-6.9175,107.6191
+d097,Design,Bandung,-6.9175,107.6191
+d098,Marketing,Bandung Barat,-6.928,107.4243
+d099,Sales,Lampung,-5.41,105.265
+d100,Design,Bandung,-6.9175,107.6191
+d101,Design,Bandung,-6.9175,107.6191
+d102,Informatic Technology,Sumbawa,-8.375,117.43
+d103,Development,Depok,-6.401,106.7942
+d104,Design,Central Sulawesi,-0.8314,119.8747
+d105,Design,Denpasar,-8.4095,115.1889

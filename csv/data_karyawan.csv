@@ -1,0 +1,120 @@
+id_karyawan,nama_karyawan,id_departement,jabatan,gaji
+k001,Adhitia Ibnu,d001,Project Manager,12000000
+k002,Adriansyah,d002,Developer Frontend,8500000
+k003,Annisa Wulandari,d003,Design Grapich,7500000
+k004,Agus Dio Pratama,d004,Tester Application,7000000
+k005,Danny Wahyu Saputra,d005,Developer Backend,9500000
+k006,Riski Buulolo,d001,Developer Backend,9500000
+k007,Rekha Widya Andini,d002,Design Grapich,7500000
+k008,Muhammad Arifin Ilham,d003,Tester Application,7000000
+k009,Randy Ivando,d004,Project Manager,12000000
+k010,Ardhika Facriz,d005,Developer Frontend,8500000
+k011,Fierre Maulana,d001,Design Grapich,7500000
+k012,Farrel Ananda,d002,Developer Frontend,8500000
+k013,Hammam Almahdi,d003,Project Manager,12000000
+k014,Tegar Prasetya,d004,Tester Application,7000000
+k015,Fajar Muhairi,d005,Developer Backend,9500000
+k016,Shahreza Khadafi,d001,Developer Frontend,8500000
+k017,Yudi Kurniawan,d002,Developer Backend,9500000
+k018,Cici Wela Sari,d003,Project Manager,12000000
+k019,Vania Nanda Safira,d004,Design Grapich,7500000
+k020,Brittany Lucero,d001,Musician,6000000
+k021,Julia Alexander,d002,Warehouse manager,8000000
+k022,Tyler Valenzuela,d001,"Engineer, electrical",10000000
+k023,Ashley Lambert,d001,Hydrographic surveyor,8500000
+k024,Darren Simpson,d003,"Psychotherapist, dance movement",9000000
+k025,Tiffany Davis,d001,Clothing/textile technologist,7500000
+k026,Jessica Gomez,d002,Art therapist,8000000
+k027,Lauren Lopez,d003,Regulatory affairs officer,10000000
+k028,Micheal James,d005,Field trials officer,8500000
+k029,Kevin Gibson,d004,Heritage manager,9500000
+k030,Sean Duran,d005,Diplomatic Services operational officer,10500000
+k031,Dawn Smith,d004,Passenger transport manager,8500000
+k032,April Mcintyre,d003,"Engineer, production",9500000
+k033,Shannon Gibbs,d001,Personal assistant,7500000
+k034,Manuel Cantrell,d003,Private music teacher,6000000
+k035,Timothy Vazquez,d002,Environmental health practitioner,9500000
+k036,Heidi Moore,d004,Health promotion specialist,9000000
+k037,Joseph Deleon,d002,"Designer, furniture",8500000
+k038,Yvonne Smith,d001,"Programmer, applications",9500000
+k039,Allison Owens,d002,Education administrator,9000000
+k040,Cassandra Obrien,d001,Herbalist,8000000
+k041,Cynthia Booker,d004,Podiatrist,10000000
+k042,Riley Rivera,d002,Multimedia programmer,8500000
+k043,Lisa Myers,d004,"Designer, exhibition/display",7500000
+k044,Lori Merritt,d002,Chartered accountant,12000000
+k045,Jeffrey Johnson,d002,Tourism officer,8500000
+k046,Austin Perkins,d002,Textile designer,7500000
+k047,Hannah Massey,d002,Clinical biochemist,11000000
+k048,Mr. Austin Neal,d002,Further education lecturer,9000000
+k049,Lisa Smith,d005,Mudlogger,8000000
+k050,John Cain,d002,Advertising art director,9500000
+k051,David Holland,d003,Field seismologist,8500000
+k052,Bryan Richardson,d005,Commercial art gallery manager,8000000
+k053,Vincent Crawford,d003,Television/film/video producer,10000000
+k054,Lisa Lambert,d005,Air cabin crew,6000000
+k055,Katie Warren,d005,Print production planner,7500000
+k056,Debra Reyes,d004,Forensic psychologist,10000000
+k057,Derrick Molina,d002,Armed forces logistics/support/administrative officer,8500000
+k058,Meagan Williams,d001,"Engineer, civil (contracting)",9500000
+k059,Shelly Valdez,d005,Risk manager,10000000
+k060,Faith Berry,d001,Heritage manager,9500000
+k061,Jason Lopez,d001,Quality manager,9500000
+k062,Andrew Campbell,d005,Magazine features editor,8500000
+k063,Richard Hicks,d003,Retail merchandiser,8000000
+k064,Emily Thomas,d005,Games developer,10000000
+k065,Gabriel Martin,d001,Passenger transport manager,8500000
+k066,Laura Hartman,d002,Fast food restaurant manager,6000000
+k067,Kenneth Garza,d002,Phytotherapist,7500000
+k068,Brittany Gilmore,d002,Television/film/video producer,10000000
+k069,Angela Campbell,d001,Contracting civil engineer,9500000
+k070,David Richardson,d001,Financial risk analyst,11000000
+k071,Jesus Bradford,d001,"Pharmacist, community",10000000
+k072,Scott Reed,d005,Chief Technology Officer,15000000
+k073,Cassie Perez,d004,Building services engineer,9500000
+k074,Julie Shaffer,d002,Politician's assistant,8500000
+k075,Robert Taylor,d002,Museum/gallery conservator,8000000
+k076,Scott Martin,d003,Fashion designer,9500000
+k077,Oscar Bailey,d004,Clinical molecular geneticist,11000000
+k078,Ashley Davis,d005,Equities trader,12000000
+k079,Jacqueline Hawkins,d004,Advertising account planner,9500000
+k080,Nicholas Thomas,d005,Set designer,7500000
+k081,Sharon Thompson,d004,Physiotherapist,10000000
+k082,William Lopez,d005,Community pharmacist,9500000
+k083,Rebecca Keller,d003,Maintenance engineer,9500000
+k084,Christopher Velazquez,d005,Trade union research officer,8500000
+k085,Trevor Johnson,d004,"Designer, industrial/product",9000000
+k086,Michelle Martinez,d005,Furniture designer,8500000
+k087,Adam Jones,d003,"Designer, fashion/clothing",8500000
+k088,Alex Aguilar,d005,Quantity surveyor,10000000
+k089,Elizabeth Hernandez,d005,"Scientist, clinical (histocompatibility and immunogenetics)",12000000
+k090,Jennifer Lewis,d001,Television floor manager,8500000
+k091,Leslie Massey,d003,"Investment banker, operational",13000000
+k092,Jenny Harris,d002,Tax adviser,12000000
+k093,Crystal Smith,d002,"Accountant, chartered certified",11000000
+k094,Nicole Smith,d002,Musician,6000000
+k095,Robert Brooks,d001,Heritage manager,9500000
+k096,Thomas Perry,d001,Homeopath,8000000
+k097,Andrea Nixon,d001,Aid worker,6000000
+k098,Randy King,d003,Tree surgeon,7500000
+k099,Mary Martinez,d003,Public affairs consultant,9500000
+k100,Christine Lopez,d001,Insurance claims handler,8500000
+k101,Michael Harris,d004,"Engineer, chemical",10500000
+k102,Megan Edwards,d001,"Administrator, education",9000000
+k103,Erin Alvarado,d002,"Scientist, research (maths)",11000000
+k104,Andrea Brown,d003,Illustrator,8000000
+k105,Sara Peters,d004,Production manager,9500000
+k106,Justin Stanton,d003,Technical sales engineer,9500000
+k107,Jacqueline Merritt,d005,Environmental health practitioner,9500000
+k108,Timothy Rasmussen,d002,Technical sales engineer,9500000
+k109,Mr. Jose Thompson Jr.,d002,Television production assistant,6000000
+k110,James Myers,d005,Economist,12000000
+k111,Karen Alvarez,d005,"Physicist, medical",12000000
+k112,Susan Miller,d001,Quarry manager,9500000
+k113,Michael Booth,d004,Media planner,8500000
+k114,Mark Klein,d003,"Civil engineer, contracting",9500000
+k115,Kathleen Jordan,d005,Statistician,10000000
+k116,Thomas Little,d002,Accounting technician,7500000
+k117,James Foster,d005,Sport and exercise psychologist,10000000
+k118,Tammy Marsh,d001,Human resources officer,9500000
+k119,Jesus Morales,d001,"Psychologist, educational",9500000
